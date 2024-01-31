@@ -1,4 +1,21 @@
 #root {
-  max-width: 1680px;
+  max-width: 1780px;
   margin: auto;
+}
+
+.signin {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+}
+
+@media all and (max-width: 600px) {
+  .signin {
+    clip-path: none;
+    height: 80px;
+    width: 100%;
+  }
+
+  .icons {
+    visibility: hidden;
+    display: none;
+  }
 }
