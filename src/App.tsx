@@ -1,14 +1,16 @@
-import { useState } from "react";
 import "./App.css";
 import SignIn from "./pages/SignIn";
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="app">
-        <SignIn />
+        <Routes>
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
       </div>
     </>
   );
